@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: Open Sans;
 }
 
 body {
@@ -50,7 +51,6 @@ aside {
 main {
 	width: 678px;
 	height: inherit;
-	background-color: gray;
 	display: inline-block;
 }
 
@@ -164,4 +164,26 @@ main {
 .sidebar li:hover {
 	background-color: #f9f9f9;
 	padding: 10px 30px;
+}
+
+.container-1 {
+	width: 678px;
+	height: 400px;
+	border: 1px solid #c8c8c8;
+	box-sizing: border-box;
+}
+
+.image {
+	text-align: center;
+}
+
+.bike {
+	width: 482px;
+	padding: 47px;
+}
+
+.text {
+	font-size: 13px;
+	margin: 40px 25px 0 24px;
+	color: #2c2c2c;
 }

@@ -4,15 +4,40 @@
 	font-family: Open Sans;
 }
 
+/* BODY and BORDERS */
 body {
 	background-color: #f9f9f9;
 }
 
+.right-border {
+	height: 950px; 
+	width: 5px;
+	background: rgb(219,219,219); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(219,219,219,1) 0%, rgba(249,249,249,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(219,219,219,1) 0%,rgba(249,249,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(219,219,219,1) 0%,rgba(249,249,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#f9f9f9',GradientType=1 ); /* IE6-9 */
+	float: right;
+	margin-right: 140px;
+}
+
+.left-border {
+	height: 950px; 
+	width: 5px;
+	background: rgb(249,249,249); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(249,249,249,1) 0%, rgba(219,219,219,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(249,249,249,1) 0%,rgba(219,219,219,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(249,249,249,1) 0%,rgba(219,219,219,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#dbdbdb',GradientType=1 ); /* IE6-9 */
+	float: left;
+	margin-left: 140px;
+}
+
+/* SCELETON */
 .wrapper {
 	width: 1060px;
 	height: 950px;
 	background-color: #ffffff;
-	/* border: 1px solid black; */
 	margin: 0 auto;
 }
 
@@ -23,22 +48,12 @@ header {
 	margin-left: 48px;
 }
 
-.container {
+.container {		/*consists of aside and main*/
 	height: 600px;
 	width: 966px;
 	margin-left: 48px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	/* border: 1px solid black; */
-	
-}
-
-footer {
-	height: 40px;
-	width: 966px;
-	margin-left: 48px;
-	background-color: yellow;
-	/* border: 1px solid black; */
 }
 
 aside {
@@ -54,6 +69,15 @@ main {
 	display: inline-block;
 }
 
+footer {
+	height: 40px;
+	width: 966px;
+	margin-left: 48px;
+	background-color: yellow;
+}
+
+
+/* HEADER and FOOTER*/
 .logo {
 	margin-top: 50px;
 	margin-bottom: 40px;
@@ -88,7 +112,6 @@ main {
 	color: #ffffff;
 }
 
-
 .navbar-top a:hover {
 	border-right: 1px solid #838383;
 	border-left: 1px solid #838383;
@@ -104,7 +127,6 @@ main {
 .navbar-bottom {
 	background-color: #e1e1e1;
 }
-
 
 .navbar-bottom a {
 	text-decoration: none;
@@ -133,6 +155,8 @@ main {
 	padding: 10px 25px;
 }
 
+
+/* LEFT SIDEBAR */
 .sidebar {
 	border: 1px solid #c8c8c8;
 }
@@ -166,6 +190,8 @@ main {
 	padding: 10px 30px;
 }
 
+
+/* MAIN */
 .container-1 {
 	width: 678px;
 	height: 400px;
